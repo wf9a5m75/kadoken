@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+div.menu_bar {
+  clear: both;
+  width: 100%;
+  background-color: #CB8400;
+}
+div.menu_bottom {
+  clear: both;
+  width: 100%;
+}
+div.menu_bar ul {
+  margin: auto;
+  padding: 0;
+  list-style-type: none;
+}
+div.menu_bar ul li {
+  width: 130px;
+  height: 30px;
+  float: left;
+  display: table;
+  text-align: center;
+  vertical-align: middle;
+  border-left: 1px dotted white;
+}
+div.menu_bar ul li:first-child {
+  border-left: none;
+}
+div.menu_bar ul li a {
+  height: 1em;
+  white-space: pre;
+  word-break: keep-all;
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+  color: white;
+}

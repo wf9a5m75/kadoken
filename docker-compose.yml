@@ -1,0 +1,16 @@
+version: '3'
+services:
+  mugenkan:
+    environment:
+      - NODE_ENV=production
+    build:
+      context: ./app
+    #image: cloud.canister.io:5000/wf9a5m75/mugenkan_frontend
+    container_name: "mugenkan"
+    volumes:
+      - ./app/src:/app/src
+      - ./docs:/app/docs
+    working_dir: /app
+    tty: true
+    ports:
+      - 80:8080

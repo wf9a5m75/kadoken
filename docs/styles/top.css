@@ -1,0 +1,162 @@
+
+ul.grid_menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+ul.grid_menu li img {
+  border-width: 0;
+  width: 100%;
+  height: 100%;
+}
+ul.grid_menu li {
+  padding: 0;
+  margin: 0;
+  width: 130px;
+  height: 130px;
+  float: left;
+}
+
+section.features {
+  margin-left: 2%;
+  width: 35%;
+}
+
+section.features img.poster {
+  width: 100%;
+  max-width: 260px;
+}
+section.features iframe.map {
+  width: 220px;
+  height: 420px;
+  border: 0;
+}
+
+section {
+  float: left;
+}
+
+section.message {
+  width: 60%;
+  margin-left: 3%;
+}
+
+
+p.text {
+  line-height: 1.5em;
+}
+ul.feature_points {
+  margin: 0.5em 0;
+}
+ul.feature_points li {
+  color: red;
+}
+.placeholder {
+  position: relative;
+}
+.placeholder #logo {
+  position: absolute;
+  width: auto;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+#slideimgs {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  top:0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+#slideimgs img {
+  position: absolute;
+  top: 0; left: 0;
+  z-index: 5;
+  animation: slideshow 18s linear 0s infinite;
+}
+#slideimgs img:nth-child(2) {
+  z-index: 4;
+  animation-delay: 4s;
+}
+
+#slideimgs img:nth-child(3) {
+  z-index: 3;
+  animation-delay: 8s;
+}
+#slideimgs img:nth-child(4) {
+  z-index: 2;
+  animation-delay: 12s;
+}
+
+@keyframes slideshow {
+   25% { opacity: 1;}
+   33.33% { opacity: 0;}
+   91.66% { opacity: 0;}
+   100% { opacity: 1;}
+}
+@media screen and (max-width: 750px) {
+  .placeholder #logo {
+    width: 40%;
+  }
+  section.message {
+    margin-left: 0%;
+  }
+  ul.grid_menu  {
+    height: 110px;
+  }
+  ul.grid_menu li {
+    position: absolute;
+    clear: both;
+    margin-left: 1%;
+    height: auto;
+    width: 23%;
+  }
+
+  ul.grid_menu li#grid1 {
+    left: 25%;
+  }
+  ul.grid_menu li#grid2 {
+    left: 0;
+  }
+  ul.grid_menu li#grid3 {
+    left: 75%;
+  }
+  ul.grid_menu li#grid4 {
+    left: 50%;
+  }
+/*
+  img.img_aed-wifi1 {
+    display: none;
+  }
+  img.img_aed-wifi2 {
+    display: block;
+    width: auto;
+    margin: auto;
+    margin-bottom: 1em;
+  } */
+
+  section.message {
+    width: 100%;
+  }
+
+  section.features {
+    width: 94%;
+    text-align: center;
+  }
+  section.features img.poster {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  section.features iframe.map {
+    width: 100%;
+    max-width: 520px;
+    height: 300px;
+  }
+
+
+
+}
