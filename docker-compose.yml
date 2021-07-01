@@ -6,7 +6,7 @@ services:
     build:
       context: ./app
     #image: cloud.canister.io:5000/wf9a5m75/mugenkan_frontend
-    container_name: "mugenkan"
+    container_name: "kadoken"
     volumes:
       - ./app/src:/app/src
       - ./docs:/app/docs
